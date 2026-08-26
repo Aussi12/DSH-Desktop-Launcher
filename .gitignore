@@ -1,0 +1,23 @@
+# Generated files
+*.dmg
+*.icns
+AppIcon-1024.png
+AppIcon.iconset/
+
+# Backup
+.backup/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+Icon\r
+._*
+.Spotlight-V100
+.Trashes
+*.swp
+
+# Node
+node_modules/
+npm-debug.log*
