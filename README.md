@@ -2,6 +2,8 @@
 
 > 一键启动 DeepSeek Harness，原生 macOS 独立窗口体验。
 
+![DeepSeek Harness Screenshot](screenshot.png)
+
 ## 📥 安装
 
 ### 方式一：命令一键安装
