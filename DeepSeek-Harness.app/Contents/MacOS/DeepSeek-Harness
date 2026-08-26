@@ -1,0 +1,53 @@
+#!/bin/bash
+set -e
+
+# Step 1: Open Terminal and run dsh
+osascript -e '
+tell application "Terminal"
+    if (count of windows) = 0 then
+        set dshTab to do script "echo \"Starting DeepSeek Harness...\"; npx @deepseek-ai/dsh web --no-open"
+    else
+        set firstWindow to first window
+        set dshTab to (do script "echo \"Starting DeepSeek Harness...\"; npx @deepseek-ai/dsh web --no-open" in firstWindow)
+    end if
+    set custom title of dshTab to "DeepSeek-Harness"
+    activate
+end tell
+'
+
+# Step 2: Wait for port 3080
+echo "Waiting for DeepSeek Harness..."
+for i in $(seq 1 60); do
+    if curl -s http://127.0.0.1:3080 > /dev/null 2>&1; then
+        echo "Service ready!"
+        break
+    fi
+    sleep 1
+done
+
+# Step 3: Open native WKWebView standalone window
+# Use relative path so app works anywhere
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+open "$SCRIPT_DIR/../Resources/DeepSeek-Harness-Window.app"
+
+# Step 4: Wait for DSHWindow process to exit
+sleep 2
+while pgrep -x "DeepSeek-Harness-Window" > /dev/null 2>&1; do
+    sleep 2
+done
+
+# Step 5: Close the Terminal tab
+osascript -e '
+tell application "Terminal"
+    repeat with w in windows
+        repeat with t in tabs of w
+            if custom title of t is "DeepSeek-Harness" then
+                close t
+                exit repeat
+            end if
+        end repeat
+    end repeat
+end tell
+'
+
+echo "DeepSeek Harness stopped."
