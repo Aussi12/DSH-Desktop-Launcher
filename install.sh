@@ -33,7 +33,7 @@ fi
 
 APP_NAME="DeepSeek-Harness.app"
 TARGET_DIR="/Applications"
-GITHUB_REPO="https://github.com/YOUR_USERNAME/deepseek-harness-desktop/releases/latest/download"
+GITHUB_REPO="https://github.com/Aussi12/DSH-Desktop-Launcher/releases/download/v1.0.0"
 DOWNLOAD_URL="$GITHUB_REPO/DeepSeek-Harness.dmg"
 
 echo
