@@ -42,13 +42,14 @@ cd /tmp
 curl --fail --retry 5 --retry-delay 3 --retry-all-errors --http1.1 -L -o DeepSeek-Harness.dmg "$DOWNLOAD_URL"
 
 echo "Mounting disk image..."
+MOUNT_DIR="/Volumes/DeepSeek Harness"
 hdiutil attach -quiet DeepSeek-Harness.dmg
 
 echo "Installing to $TARGET_DIR..."
-cp -R "/Volumes/DeepSeek Harness/$APP_NAME" "$TARGET_DIR/"
+cp -R "$MOUNT_DIR/$APP_NAME" "$TARGET_DIR/"
 
 echo "Cleaning up..."
-hdiutil detach -quiet "/Volumes/DeepSeek Harness"
+hdiutil detach -quiet "$MOUNT_DIR"
 rm -f DeepSeek-Harness.dmg
 
 echo
