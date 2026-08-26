@@ -39,7 +39,7 @@ DOWNLOAD_URL="$GITHUB_REPO/DeepSeek-Harness.dmg"
 echo
 echo "Downloading DeepSeek-Harness.app..."
 cd /tmp
-curl --fail --silent --show-error -L -o DeepSeek-Harness.dmg "$DOWNLOAD_URL"
+curl --fail --retry 5 --retry-delay 3 --retry-all-errors --http1.1 -L -o DeepSeek-Harness.dmg "$DOWNLOAD_URL"
 
 echo "Mounting disk image..."
 hdiutil attach -quiet DeepSeek-Harness.dmg
