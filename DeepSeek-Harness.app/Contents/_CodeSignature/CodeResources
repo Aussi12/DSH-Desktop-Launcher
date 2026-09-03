@@ -6,11 +6,11 @@
 	<dict>
 		<key>Resources/DeepSeek-Harness-Window.app/Contents/Info.plist</key>
 		<data>
-		QdH91ePn89Xm9GruEg20ng9xBl4=
+		+G1cXf6JdQfFg9lismKfCs8e+KM=
 		</data>
 		<key>Resources/DeepSeek-Harness-Window.app/Contents/MacOS/DeepSeek-Harness-Window</key>
 		<data>
-		CSMpPEFN1tul29CGTuE3MdBN3Y8=
+		aQeNkQJkfv3/GE2DHo5BIn5Qffc=
 		</data>
 		<key>Resources/DeepSeek-Harness-Window.app/Contents/Resources/DeepSeek-Harness.icns</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Resources/DeepSeek-Harness-Window.app/Contents/_CodeSignature/CodeResources</key>
 		<data>
-		vZd5oougxXi9L7uNVCY7xWyT8E4=
+		Cs7h9isa4d/0UDSsxoM49+w8F34=
 		</data>
 		<key>Resources/DeepSeek-Harness.icns</key>
 		<data>
@@ -31,22 +31,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QdH91ePn89Xm9GruEg20ng9xBl4=
+			+G1cXf6JdQfFg9lismKfCs8e+KM=
 			</data>
 			<key>hash2</key>
 			<data>
-			WCAc/YysjWW4B9o3jMHM05gb2px5vE1BQh3ojthmLiM=
+			FrOZj5GzLbAwTQx5rReJOXbZNDzY4oQReDqvppms7Jo=
 			</data>
 		</dict>
 		<key>Resources/DeepSeek-Harness-Window.app/Contents/MacOS/DeepSeek-Harness-Window</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CSMpPEFN1tul29CGTuE3MdBN3Y8=
+			aQeNkQJkfv3/GE2DHo5BIn5Qffc=
 			</data>
 			<key>hash2</key>
 			<data>
-			zm3ciMNGEyWpJO0GZzm8NJv5jLGFFSzcMWK+RdPpbmk=
+			H9NOxdlmQ+DYL6ICCzP3pgqw9/0kABgenVSCF4GM12E=
 			</data>
 		</dict>
 		<key>Resources/DeepSeek-Harness-Window.app/Contents/Resources/DeepSeek-Harness.icns</key>
@@ -64,11 +64,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vZd5oougxXi9L7uNVCY7xWyT8E4=
+			Cs7h9isa4d/0UDSsxoM49+w8F34=
 			</data>
 			<key>hash2</key>
 			<data>
-			PPzG4xMDfe6b8UsZFB4NnN9UdovhboReJBBoeGSrits=
+			ZOoyi/OGBARZFuDMfkqCkRWMIc62DcA5VyBXMvs+oSQ=
 			</data>
 		</dict>
 		<key>Resources/DeepSeek-Harness.icns</key>
